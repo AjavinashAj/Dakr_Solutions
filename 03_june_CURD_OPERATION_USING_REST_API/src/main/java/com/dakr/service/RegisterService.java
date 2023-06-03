@@ -15,4 +15,6 @@ public interface RegisterService {
 
 	public Registration updateD(Registration reg);
 
+	public String deleteD(Integer id);
+
 }

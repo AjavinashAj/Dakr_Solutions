@@ -38,4 +38,22 @@ public class ServiceRegistrationImp implements RegisterService {
 		return repo.save(re);
 	}
 
+
+	@Override
+	public String deleteD(Integer id) {
+		String temp="";
+		if(repo.findById(id).isPresent())
+		{
+			repo.deleteById(id);
+			temp="deleted successfully....";
+		}
+		else
+		{
+			temp=id+"is not present in the Data Base";
+		}
+		return temp;
+	}
+	
+	
+
 }
