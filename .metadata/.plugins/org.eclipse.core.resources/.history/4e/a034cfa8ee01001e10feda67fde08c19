@@ -1,0 +1,5 @@
+package com.dakr.controller;
+
+public class RegistrationController {
+
+}

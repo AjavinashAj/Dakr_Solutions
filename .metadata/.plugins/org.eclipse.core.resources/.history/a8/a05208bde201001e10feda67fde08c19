@@ -1,0 +1,5 @@
+package com.dakr.repository;
+
+public interface RegistationRepository {
+
+}

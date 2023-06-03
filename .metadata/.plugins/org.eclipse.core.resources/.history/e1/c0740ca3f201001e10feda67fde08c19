@@ -1,0 +1,13 @@
+package com.dakr.service;
+
+import java.util.Optional;
+
+import com.dakr.entity.Registration;
+
+public interface RegisterService {
+
+	 public Registration insert(Registration re);
+
+      public Optional<Registration> retrive(Integer id);
+
+}

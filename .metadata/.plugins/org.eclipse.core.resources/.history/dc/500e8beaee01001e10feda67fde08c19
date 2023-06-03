@@ -1,0 +1,19 @@
+package com.dakr.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dakr.entity.Registration;
+import com.dakr.repository.RegistationRepository;
+
+@Service
+public class ServiceRegistrationImp {
+	@Autowired
+	private  RegistationRepository repo;
+	
+	
+	Registration insert(Registration re) {
+		return repo.save(re);
+	}
+
+}

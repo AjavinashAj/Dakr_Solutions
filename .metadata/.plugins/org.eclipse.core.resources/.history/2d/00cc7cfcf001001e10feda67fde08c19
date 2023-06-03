@@ -1,0 +1,9 @@
+package com.dakr.service;
+
+import com.dakr.entity.Registration;
+
+public interface RegisterService {
+
+	 Registration insert(Registration re);
+
+}
